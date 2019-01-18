@@ -157,3 +157,23 @@ class _HomePageState extends State<HomePage> {
         ),
       ));
 }
+
+class ColorPalette {
+  static Color backgroundColor = Color(0xFFFCFCFC);
+
+  static Color boldTitleColor = Colors.grey[900];
+  static Color subtitleColor = Colors.grey[600];
+  static Color subtitleColorLight = Colors.grey[400];
+
+  static List<Color> appThemedGradientColors = [
+    Color(0xFFAD5389),
+    Color(0xFF3C1053),
+  ];
+
+  static List<Color> appThemedGradientColorsPremium = [
+    Color(0xFFFBAB66),
+    Color(0xFFF7418C),
+  ];
+
+}
+
