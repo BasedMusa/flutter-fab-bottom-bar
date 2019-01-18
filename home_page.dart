@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
-  final String error;
-  final SharedPreferences sharedPreferences;
-
-  HomePage({this.error, this.sharedPreferences});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -131,9 +127,7 @@ class _HomePageState extends State<HomePage> {
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: userProfile.hasPremium ?? false
-                  ? ColorPalette.appThemedGradientColorsPremium
-                  : ColorPalette.appThemedGradientColors),
+              colors: ColorPalette.appThemedGradientColors),
           boxShadow: selectedPage == 2
               ? [
                   BoxShadow(
@@ -168,11 +162,6 @@ class ColorPalette {
   static List<Color> appThemedGradientColors = [
     Color(0xFFAD5389),
     Color(0xFF3C1053),
-  ];
-
-  static List<Color> appThemedGradientColorsPremium = [
-    Color(0xFFFBAB66),
-    Color(0xFFF7418C),
   ];
 
 }
